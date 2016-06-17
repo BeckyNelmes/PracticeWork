@@ -6,6 +6,7 @@ import javafx.scene.layout.Pane;
 import javafx.event.EventHandler;
 import javafx.stage.WindowEvent;
 import java.util.List;
+import 
 
 public class SceneController
 {    
@@ -19,6 +20,9 @@ public class SceneController
     @FXML   private Button noButton;
     @FXML   private Button exitButton;
     @FXML   private ListView listView;
+    @FXML   private Label Numberidlabel;
+    @FXML   private Label CurrentIdlabel;
+    
 
     public SceneController()          // The constructor method, called first when the scene is loaded.
     {
@@ -45,6 +49,9 @@ public class SceneController
         assert noButton != null : "Can't find yes button.";
         assert exitButton != null : "Can't find exit button.";
         assert listView != null : "Can't find list box.";
+        assert CurrentIdlabel != null : "Can't find CurrentId Label.";
+        assert Numberidlabel != null : "Can't find Numberid Label.";
+        
 
         /* Next, we load the list of fruit from the database and populate the listView. */
         System.out.println("Populating scene with items from the database...");        
