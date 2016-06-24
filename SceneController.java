@@ -2,11 +2,12 @@ import javafx.fxml.FXML;
 import javafx.stage.Stage;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
+import javafx.scene.control.Label;
 import javafx.scene.layout.Pane;
 import javafx.event.EventHandler;
 import javafx.stage.WindowEvent;
 import java.util.List;
-import 
+
 
 public class SceneController
 {    
@@ -16,12 +17,16 @@ public class SceneController
     /* These FXML variables exactly corrispond to the controls that make up the scene, as designed in Scene 
      * Builder. It is important to ensure that these match perfectly or the controls won't be interactive. */
     @FXML   private Pane backgroundPane;    
-    @FXML   private Button yesButton;
-    @FXML   private Button noButton;
-    @FXML   private Button exitButton;
+    @FXML   private Button remove_button;
+    @FXML   private Button search_button;
+    @FXML   private Button add_button;
+    @FXML   private Button edit_button;
+    @FXML   private Button exit_button;
     @FXML   private ListView listView;
-    @FXML   private Label Numberidlabel;
-    @FXML   private Label CurrentIdlabel;
+    @FXML   private Label Label_doughnut;
+
+    
+    
     
 
     public SceneController()          // The constructor method, called first when the scene is loaded.
@@ -45,12 +50,15 @@ public class SceneController
          * application won't work. If the control names in Scene Builder don't match the variables this fails. */ 
         System.out.println("Asserting controls...");
         assert backgroundPane != null : "Can't find background pane.";
-        assert yesButton != null : "Can't find yes button.";
-        assert noButton != null : "Can't find yes button.";
-        assert exitButton != null : "Can't find exit button.";
+        assert remove_button != null : "Can't find remove button.";
+        assert search_button != null : "Can't find search button.";
+        assert add_button != null : "Can't find add button.";
         assert listView != null : "Can't find list box.";
-        assert CurrentIdlabel != null : "Can't find CurrentId Label.";
-        assert Numberidlabel != null : "Can't find Numberid Label.";
+        assert edit_button != null : "Can't find edit button.";
+        assert exit_button != null : "Can't find exit button.";
+        assert add_button != null : "Can't find add button.";
+        assert Label_doughnut != null : "Can't find doughnut label.";
+     
         
 
         /* Next, we load the list of fruit from the database and populate the listView. */
@@ -79,12 +87,22 @@ public class SceneController
 
     /* The next three methods are event handlers for clicking on the buttons. 
      * The names of these methods are set in Scene Builder so they work automatically. */    
-    @FXML   void yesClicked()
+    @FXML   void addClicked()
     {
-        System.out.println("Yes was clicked!");        
+        System.out.println("Add was clicked!");        
     }
-
-    @FXML   void noClicked()
+    
+    @FXML   void searchClicked()
+    {
+        System.out.println("No was clicked!");
+    }
+    
+    @FXML   void removeClicked()
+    {
+        System.out.println("No was clicked!");
+    }
+    
+    @FXML   void editClicked()
     {
         System.out.println("No was clicked!");
     }

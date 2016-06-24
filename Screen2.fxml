@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.66" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="Doughnut_name" layoutX="14.0" layoutY="14.0" prefHeight="62.0" prefWidth="572.0" text="Doughnut Name">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Label>
+      <ImageView fx:id="doughnut_image" fitHeight="286.0" fitWidth="238.0" layoutX="14.0" layoutY="76.0" pickOnBounds="true" preserveRatio="true" />
+      <Label fx:id="Doughnut_flavour" layoutX="266.0" layoutY="98.0" text="Flavour" />
+      <Label fx:id="Doughnut_calories" layoutX="265.0" layoutY="134.0" text="Calories" />
+      <Label fx:id="Doughnut_shape" layoutX="263.0" layoutY="171.0" text="Shape" />
+      <Label fx:id="Doughnut_topping" layoutX="263.0" layoutY="209.0" text="Topping" />
+      <Label fx:id="Doughnut_filling" layoutX="263.0" layoutY="244.0" text="Filling" />
+      <Label fx:id="Doughnut_price" layoutX="265.0" layoutY="285.0" text="Price" />
+   </children>
+</Pane>
